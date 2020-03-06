@@ -4,9 +4,10 @@ public class task2 {
 
 	public static void main(String[] args) {
 		             Scanner scan = new Scanner (System.in)                       ;
-		             System.out.println("Please enter the text !")                ;
+		             System.out.println("Please enter the text !")                ; 
 	                 String input = scan .nextLine()                              ;
-	                  input = input.replace(" ","")                               ;
+	                 input = input.toLowerCase();
+	                  input = input.replaceAll("[^a-z0-9]","")                    ;
 	                 String reverse= ""                                           ;
 	                 boolean palindrome = false ;
 	                 for (int i = input.length()-1;i>=0;i--) 
